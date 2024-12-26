@@ -6,8 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS Variables Exercise</title>
   <script src="script.js"></script>
+  <style>
+    .container {
+      height: 500px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .cart-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .cart-btn:hover {
+      background-color: #f44336;
+    }
+
+    .cart-btn:active {
+      background-color: #e53935;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+  </style>
 </head>
-<link rel="stylesheet" href="style.css">
+
 <script>
   let cartQuantity = 1;
 </script>
@@ -47,13 +79,13 @@
         ">+3</button>
     </div>
     <div>
-      <button onclick="
-          cartQuantity=cartQuantity-1
-          console.log(cartQuantity);
-          cartQuantity<0 ?alert('Not enough items in the cart') :cartQuantity===cartQuantity
-        ">Remove Item</button>
-
-
+      <button class="cart-btn" onclick="
+      cartQuantity=cartQuantity-1
+      console.log(cartQuantity);
+      cartQuantity<0 ?alert('Not enough items in the cart') :cartQuantity===cartQuantity
+    ">Remove Item</button>
+    </div>
+    <div>
       <button class="cart-btn" onclick="
         cartQuantity=0;
         console.log(`Cart Quantity ${cartQuantity}`);
