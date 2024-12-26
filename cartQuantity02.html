@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Variables Exercise</title>
+  <script src="script.js"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+<script>
+  let cartQuantity = 1;
+</script>
+
+<body>
+  <div class="container">
+    <div>
+
+      <button class="cart-btn" onclick="
+    console.log(`Cart Quantity ${cartQuantity}`);
+    
+    
+    ">Show Quantity</button>
+    </div>
+    <div>
+
+      <button class="cart-btn" onclick="
+  cartQuantity=cartQuantity+1
+  console.log(`Cart Quantity ${cartQuantity}`);
+  cartQuantity>=10 ?alert('the cart its full') : cartQuantity===cartQuantity
+  
+  ">Add to Cart</button>
+    </div>
+    <div>
+
+      <button class="cart-btn" onclick="
+  cartQuantity=cartQuantity+2
+  console.log(`Cart Quantity ${cartQuantity}`);
+  cartQuantity>=10 ?alert('the cart its full') : cartQuantity===cartQuantity
+  
+  ">+2</button>
+    </div>
+    <div>
+
+      <button class="cart-btn" onclick="
+  cartQuantity=cartQuantity+3
+  console.log(`Cart Quantity ${cartQuantity}`);
+  cartQuantity>=10 ?alert('the cart its full') : cartQuantity===cartQuantity
+  
+  ">+3</button>
+    </div>
+    <div>
+
+
+      <button class="cart-btn" onclick="
+  cartQuantity=0;
+  console.log(`Cart Quantity ${cartQuantity}`);
+  
+  ">Reset Cart</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
