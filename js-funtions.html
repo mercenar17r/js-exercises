@@ -30,9 +30,51 @@
       console.log(`Hello ${name}`);
     }
 
-
-
     greet()
+
+
+    function convertToFahrenheit(celsius) {
+      console.log((celsius * 9 / 5) + 32);
+    }
+    convertToFahrenheit(25)
+
+
+
+    function convertToCelsius(fahreinheit) {
+      console.log((fahreinheit - 32) * 5 / 9);
+    }
+
+    convertToCelsius(86)
+
+    function convertTemperature(degrees, unit) {
+      if (unit === 'C') {
+        console.log((degrees * 9 / 5) + 32);
+      } else if (unit === 'F') {
+        console.log((degrees - 32) * 5 / 9);
+      }
+    }
+
+    convertTemperature(25, 'C')
+    convertTemperature(86, 'F')
+
+
+
+
+
+
+    function convertLenght(length, from, to) {
+      if (from === 'miles' && to === 'km') {
+        return `${length * 1.6} km `
+      } else if (from === 'km' && to === 'miles') {
+        return `${length / 1.6} miles`
+      } else if (from === 'km' && to === 'km') {
+        return `${length} km`
+      }
+    }
+
+    console.log(convertLenght(50, 'miles', 'km'));
+    console.log(convertLenght(32, 'km', 'miles'));
+    console.log(convertLenght(50, 'km', 'km'));
   </script>
 </head>
 
