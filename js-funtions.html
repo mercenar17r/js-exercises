@@ -69,12 +69,33 @@
         return `${length / 1.6} miles`
       } else if (from === 'km' && to === 'km') {
         return `${length} km`
+      } else if (from === 'miles' && to === 'ft') {
+        return `${length * 5280} ft`
+      } else if (from === 'km' && to === 'ft') {
+        return `${length * 3281} ft`
       }
+
+
+      if (!from == 'km' || !to == 'miles') {
+        return `Invalid unit ${from, to}`
+      } else if (to !== 'km' && to !== 'miles' && to !== 'ft') {
+        return `Invalid unit: ${to}`;
+      }
+
     }
 
-    console.log(convertLenght(50, 'miles', 'km'));
-    console.log(convertLenght(32, 'km', 'miles'));
-    console.log(convertLenght(50, 'km', 'km'));
+    // console.log(convertLenght(50, 'miles', 'km'));
+    // console.log(convertLenght(32, 'km', 'miles'));
+    // console.log(convertLenght(50, 'km', 'km'));
+
+
+
+    //   console.log(convertLenght(5, 'miles', 'km'));
+    //   console.log(convertLenght(5, 'miles', 'ft'));
+    //   console.log(convertLenght(5, 'km', 'ft'));
+
+    console.log(convertLenght(5, 'lb', 'lb'));
+    // 
   </script>
 </head>
 
