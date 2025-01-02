@@ -63,6 +63,14 @@
       console.log(`Cart quantity ${cartQuantity}`);
     }
 
+
+    if (cartQuantity >= 10) {
+      alert('The cart is full');
+      return
+    } else if (cartQuantity <= 0) {
+      alert(`Not enough items in cart`)
+    }
+
   }
 </script>
 
@@ -79,8 +87,6 @@
       <button class="cart-btn" onclick="
             button='1'
             updateCartQuantity(button)
-           
-            // cartQuantity>=10 ?alert('the cart i
             ">Add to Cart</button>
     </div>
     <div>
