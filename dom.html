@@ -8,13 +8,21 @@
 <body>
 
   <button>HI!</button>
+  <button class="js-button">second button</button>
 
 </body>
 <script>
-  document.body.innerHTML = 'hello';
-  document.title = 'Good job!';
-  console.log(document.body);
-  console.log(typeof document.body);
+  // document.body.innerHTML = 'hello';
+  // document.title = 'Good job!';
+  // console.log(document.body);
+  // console.log(typeof document.body);
+  // document.body.innerHTML
+  // document.body.innerHTML = 'changed'
+  document.querySelector('button')
+    .innerHTML = 'ceva'
+
+
+  const buttonElement = document.querySelector('.js-button').innerHTML = 'ddasdd'
 </script>
 
 </html>
