@@ -10,22 +10,25 @@
 <body>
 
   <p>Youtube Subscribe Button</p>
-  <button onclick="
-  
-const buttonElement=document.querySelector('.js-yt')
+  <button onclick=" subscribe()
 
-
-if(buttonElement.innerHTML==='Subscribe'){
-  buttonElement.innerHTML='Subscribed'
-} else {
-  buttonElement.innerHTML='Subscribe'
-}
-  
   " class="js-yt">Subscribe</button>
 
-</body>
-<script>
 
-</script>
+
+  <script>
+    function subscribe() {
+
+      const buttonElement = document.querySelector('.js-yt')
+
+
+      if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerHTML = 'Subscribed'
+      } else {
+        buttonElement.innerHTML = 'Subscribe'
+      }
+    }
+  </script>
+</body>
 
 </html>
