@@ -6,8 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazon shipping calculator</title>
 </head>
+<script>
+  function calculateTotal() {
+    const inputElement = document.querySelector('.js-cost-input')
+    let cost = inputElement.value
+    if (cost < 40) {
+      cost = cost + 10
+    }
+  }
+</script>
 
 <body>
+  <p>Amazon shipping calculator</p>
+  <input class="js-cost-input" placeholder="Cost of order" type="text">
+  <button onclick="
+  calculateTotal()
+ 
+  
+  ">Calculate</button>
 
 </body>
 
