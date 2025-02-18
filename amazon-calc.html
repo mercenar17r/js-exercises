@@ -7,23 +7,28 @@
   <title>Amazon shipping calculator</title>
 </head>
 <script>
+  let cost = ''
+
   function calculateTotal() {
     const inputElement = document.querySelector('.js-cost-input')
-    let cost = inputElement.value
+    cost = Number(inputElement.value)
     if (cost < 40) {
       cost = cost + 10
     }
+    document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
   }
 </script>
 
 <body>
   <p>Amazon shipping calculator</p>
-  <input class="js-cost-input" placeholder="Cost of order" type="text">
+  <input class="js-cost-input" placeholder="Cost of order">
   <button onclick="
   calculateTotal()
  
   
   ">Calculate</button>
+
+  <p class="js-total-cost"></p>
 
 </body>
 
