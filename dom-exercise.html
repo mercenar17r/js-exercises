@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM exercises</title>
-  <button class="hello-button">hello</button>
+
+</head>
+<script>
+  // const helloBtn = document.querySelector('.hello-button');
+</script>
+
+<body>
+  <!-- <button class="hello-button">hello</button>
   <button class="second-btn" onclick="
   document.querySelector('.second-btn').innerHTML='donee'
 
@@ -20,15 +27,23 @@ document.querySelector('.user-choice').innerHTML=`You picked heads`
 document.querySelector('.user-choice').innerHTML=`You picked tails`
 
 ">tails</button>
-  <p class="user-choice"></p>
+  <p class="user-choice"></p> -->
+  <input placeholder="Numele tau" class="js-name-input" onkeydown="
+    if (event.key === 'Enter') {
+      
+      const inputElement = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    }
+  ">
 
-</head>
-<script>
-  const helloBtn = document.querySelector('.hello-button');
-</script>
+  <button onclick="
+  const inputElement = document.querySelector('.js-name-input');
+  document.querySelector('.js-message')
+    .innerHTML = `Your name is: ${inputElement.value}`;
+">Apasa</button>
 
-<body>
-
+  <p class="js-message"></p>
 </body>
 
 </html>
