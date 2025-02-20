@@ -44,6 +44,24 @@ document.querySelector('.user-choice').innerHTML=`You picked tails`
 ">Apasa</button>
 
   <p class="js-message"></p>
-</body>
+
+  <body>
+    <input placeholder="Numele tau" class="js-name-input" onkeydown="
+        if (event.key === 'Enter') {
+          
+          const inputElement = document.querySelector('.js-name-input');
+          document.querySelector('.js-message')
+            .innerHTML = `Your name is: ${inputElement.value}`;
+        }
+      ">
+
+    <button onclick="
+      const inputElement1 = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+    ">Apasa</button>
+
+    <p class="js-message"></p>
+  </body>
 
 </html>
