@@ -6,13 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dom projects</title>
 </head>
+<style>
+  body {
+    font-family: Arial;
+    font-weight: bold;
+
+
+  }
+
+  .subscribe-button {
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  .is-subscribed {
+    background-color: rgb(190, 190, 190);
+    color: black;
+  }
+</style>
 
 <body>
 
   <p>Youtube Subscribe Button</p>
   <button onclick=" subscribe()
 
-  " class="js-yt">Subscribe</button>
+  " class="js-yt subscribe-button">Subscribe</button>
 
 
 
@@ -24,16 +49,12 @@
 
       if (buttonElement.innerText === 'Subscribe') {
         buttonElement.innerHTML = 'Subscribed'
+        buttonElement.classList.add('is-subscribed')
       } else {
         buttonElement.innerHTML = 'Subscribe'
+        buttonElement.classList.remove('is-subscribed')
       }
     }
-    document.body.innerHTML = 'hello';
-    document.title = 'Good job!';
-    console.log(document.body);
-    console.log(typeof document.body);
-    document.body.innerHTML
-    document.body.innerHTML = 'changed'
   </script>
 </body>
 
