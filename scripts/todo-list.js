@@ -15,6 +15,8 @@ for (let i=0;i< todoList.length; i++){
 
 console.log(todoListHtml);
 
+document.querySelector('.js-todo-list').innerHTML=todoListHtml
+
 function addTodo(){
  const inputElement= document.querySelector('.js-name-input')
  const name=inputElement.value
