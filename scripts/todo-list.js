@@ -12,7 +12,7 @@ function renderToDoList(){
 
   let todoListHtml='';
 
-  for (let i=0;i< todoList.length; i++){
+  for (let i=0; i< todoList.length; i++){
     const todo= todoList[i]
     const html=`<p>${todo}</p>`
     todoListHtml+=html
