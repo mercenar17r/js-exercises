@@ -31,25 +31,25 @@
     //   console.log(i);
 
     // }
-    // let i = 5;
+    let i = 5;
 
-    // while (i <= 10) {
-    //   console.log(i);
-    //   i++
-    // }
-    // while (i >= 0) {
-    //   console.log(i);
-    //   i--
-    // }
-    // let numbers = [10, 15, 20, 25]
-    // const result = []
+    while (i <= 10) {
+      console.log(i);
+      i++
+    }
+    while (i >= 0) {
+      console.log(i);
+      i--
+    }
+    numbers = [10, 15, 20, 25]
+    const result = []
 
-    // for (let i = 0; i < numbers.length; i++) {
-    //   result.push(numbers[i] + 1)
+    for (let i = 0; i < numbers.length; i++) {
+      result.push(numbers[i] + 1)
 
 
-    // }
-    // console.log(result);
+    }
+    console.log(result);
 
     function addOne(array) {
       result = []
@@ -59,6 +59,17 @@
       return result
     }
     console.log(addOne([10, 14, 34]));
+    let numbers = [2, 5, 6]
+
+    function addNum(array, num) {
+      result = [];
+      for (let i = 0; i < array.length; i++) {
+        result.push(array[i] + num)
+      }
+      return result
+
+    }
+    console.log(addNum([2, 4, 6], 6));
   </script>
 </body>
 
