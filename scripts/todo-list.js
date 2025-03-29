@@ -1,9 +1,11 @@
-const todoList=[
-  'make dinner',
-  'do homework',
-  'play football',
-  'admire Ronaldo'
-]
+const todoList=[{
+  name:'make dinner',
+  dueDate:'2025-03-29'
+},{
+  name:'do homework',
+  dueDate:'2025-03-27'
+},
+];
 renderToDoList()
 
 
@@ -13,10 +15,13 @@ function renderToDoList(){
   let todoListHtml='';
 
   for (let i=0; i< todoList.length; i++){
-    const todo= todoList[i]
+    const todoObject= todoList[i]
+    //const name=todoObject.name;
+    //const dueDate=todoObject.dueDate
+    const {name, dueDate}= todoObject
     const html=`
       <p>
-        ${todo} <button onclick ='
+        ${name} ${dueDate}<button onclick ='
         todoList.splice(${i}, 1)
         renderToDoList()
         
@@ -35,8 +40,13 @@ function renderToDoList(){
 
 function addTodo(){
  const inputElement= document.querySelector('.js-name-input')
+ const dateInputElement=document.querySelector('.js-due-date-input')
+ const dueDate=dateInputElement.value
  const name=inputElement.value
- todoList.push(name)
+ todoList.push({
+    name:name,
+    dueDate:dueDate
+ })
  console.log(todoList);
  inputElement.value=''
 
