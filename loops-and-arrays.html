@@ -113,12 +113,27 @@
           result.max = values
         }
 
-
       }
       return result
     }
-
     console.log(minMax([2, -4, 4]));
+
+    function countWords(words) {
+      let strings = [];
+      let wordsCount = {
+        apple: 0,
+        grape: 0
+      }
+
+      for (let i = 0; i < words.length; i++) {
+        strings.push(words[i])
+        console.log(strings);
+
+
+      }
+    }
+
+    console.log(countWords('apple', 'grape', 'apple'));
   </script>
 </body>
 
