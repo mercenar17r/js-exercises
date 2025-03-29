@@ -1,0 +1,7 @@
+body{
+  font-family: Arial;
+}
+.to-do-grid{
+  grid-template-columns: 250px 150px 100px;
+  display: grid;
+}
