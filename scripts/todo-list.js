@@ -28,7 +28,7 @@ function renderToDoList(){
             ${dueDate}
           </div>
           
-          <button onclick ='
+          <button class='delete-button' onclick ='
           todoList.splice(${i}, 1)
           renderToDoList()
           
