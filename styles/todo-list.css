@@ -2,7 +2,13 @@ body{
   font-family: Arial;
   background-color: #ac8d8d;
 }
-.to-do-grid{
+.to-do-grid,
+.todo-input-grid{
   grid-template-columns: 250px 150px 100px;
   display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.todo-input-grid{
+  margin-bottom: 10px;
 }

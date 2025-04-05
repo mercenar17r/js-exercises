@@ -10,11 +10,13 @@
 
 <body>
   <p>ToDo List</p>
-  <input class="js-name-input" placeholder="Todo name">
-  <input class="js-due-date-input" type="date">
-  <button onclick="
-    addTodo()
-  ">Add</button>
+  <div class="todo-input-grid">
+    <input class="js-name-input" placeholder="Todo name">
+    <input class="js-due-date-input" type="date">
+    <button onclick="
+        addTodo()
+      ">Add</button>
+  </div>
   <div class="js-todo-list to-do-grid"></div>
 
   <script src="scripts/todo-list.js"></script>
