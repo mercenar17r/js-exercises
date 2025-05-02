@@ -7,7 +7,9 @@
   <title>Advanced functions</title>
 </head>
 <script>
+  /*
   const buttonElement = document.querySelector('.js-button');
+  
 
   const eventListener = () => {
     console.log('click');
@@ -50,6 +52,16 @@
     console.log(param);
   }
   display(2);
+  */
+
+
+  function run(param) {
+    param()
+  }
+
+  run(function () {
+    console.log('cosmin');
+  })
 </script>
 
 <body>
