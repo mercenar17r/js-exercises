@@ -74,17 +74,34 @@
   // }, 3000)
 
 
-  [
-    'trent-alexander-arnold',
-    'killian mbappe',
-    'valverde'
+  // [
+  //   'trent-alexander-arnold',
+  //   'killian mbappe',
+  //   'valverde'
 
-  ].forEach(function (value, index) {
-    console.log(value, index);
-  })
+  // ].forEach(function (value, index) {
+  //   console.log(value, index);
+  // })
+
+
+  const add = function () {
+    console.log(2 + 3);
+  }
+  add()
+  add()
+
+  function runTwice(fun) {
+
+  }
+
+  document.querySelector('.start-btn').innerHTML = setTimeout(function timer() {
+    document.querySelector('.start-btn').innerHTML = 'Finished'
+  }, 1000)
 </script>
 
 <body>
+  <button class="start-btn" onclick="
+    timer()">Start</button>
 
 
 
