@@ -120,10 +120,16 @@ addToCart()
     }, 3000)
   }
 
+  let timeoutId
 
   function addToCart() {
     const cartBtn = document.querySelector('.cart-message')
     cartBtn.innerHTML = 'Added'
+    clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(function () {
+      cartBtn.innerHTML = '';
+    }, 2000);
     setTimeout(function () {
       cartBtn.innerHTML = ''
     }, 3000)
