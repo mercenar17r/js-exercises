@@ -18,6 +18,12 @@
 addToCart()
 ">Add to Cart</button>
   <p class="cart-message"></p>
+
+
+  <button onclick="
+  
+  messages++">Add</button>
+  <button onclick="messages--">Remove</button>
 </body>
 <script>
   /*
@@ -97,6 +103,7 @@ addToCart()
   // })
 
 
+
   const add = function () {
     console.log(2 + 3);
   }
@@ -135,6 +142,33 @@ addToCart()
     }, 3000)
 
   }
+  let messages = 2;
+
+
+
+  setInterval(function () {
+    if (document.title === 'App') {
+      document.title = `${messages} New Messages`
+    } else {
+      document.title = 'App'
+    }
+  }, 1000)
+
+
+
+
+
+  // function messageApp() {
+  //   setInterval(function () {
+  //     if (document.title === 'App') {
+  //       document.title = '(2) New Messages'
+
+  //     } else {
+  //       document.title = 'App'
+  //     }
+  //   }, 1000)
+  // }
+  // messageApp()
 </script>
 
 
