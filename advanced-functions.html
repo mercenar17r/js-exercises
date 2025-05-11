@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advanced functions</title>
 </head>
+
+<body>
+  <button class="start-btn" onclick="
+    timer()
+    
+    ">Start</button>
+
+
+
+</body>
 <script>
   /*
   const buttonElement = document.querySelector('.js-button');
@@ -94,17 +104,19 @@
 
   }
 
-  document.querySelector('.start-btn').innerHTML = setTimeout(function timer() {
-    document.querySelector('.start-btn').innerHTML = 'Finished'
-  }, 1000)
+
+  const buttonElement = document.querySelector('.start-btn')
+  console.log(buttonElement);
+
+  function timer() {
+    setInterval(function () {
+      document.querySelector('.start-btn').innerHTML = 'Loading...'
+    }, 1000)
+    setTimeout(function () {
+      document.querySelector('.start-btn').innerHTML = 'Finished'
+    }, 3000)
+  }
 </script>
 
-<body>
-  <button class="start-btn" onclick="
-    timer()">Start</button>
-
-
-
-</body>
 
 </html>
