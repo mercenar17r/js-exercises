@@ -9,6 +9,8 @@
 
 <body>
 
+  <button onclick="" class="js-button">Click</button>
+
 </body>
 <script>
   //Arrow functions
@@ -26,6 +28,28 @@
   oneParam(2)
 
   const oneLine = () => 2 + 3
+
+  const tasks = [
+    'watch ronaldo',
+    'play football',
+    'learn to dribble'
+  ]
+
+
+
+
+  const buttonElement = document.querySelector('.js-button')
+
+  const eventListener = () => {
+    console.log('click');
+  }
+
+  buttonElement.addEventListener('click', eventListener)
+  buttonElement.removeEventListener('click', eventListener)
+
+  buttonElement.addEventListener('click', () => {
+    console.log('click2');
+  })
 </script>
 
 </html>
